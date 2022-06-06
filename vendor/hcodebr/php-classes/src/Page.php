@@ -24,9 +24,9 @@ class Page {
 
 		Tpl::configure( $config );
 
-		$this->$tpl = new Tpl;
+		$this->tpl = new Tpl;
 
-		$this->setData($data);
+		$this->setData($this->options["data"]);
 
 		$this->tpl->draw("header");
 	}
